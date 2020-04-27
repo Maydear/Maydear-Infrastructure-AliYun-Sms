@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.1;netstandard2.0</TargetFrameworks>
+        <PackageProjectUrl>https://github.com/Maydear/Maydear-Infrastructure-AliYun-Sms</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Maydear/Maydear-Infrastructure-AliYun-Sms.git</RepositoryUrl>
+        <PackageIconUrl>http://oss.lvcoco.com/static/logo.png</PackageIconUrl>
+        <PackageLicenseFile>LICENSE-2.0.txt</PackageLicenseFile>
+        <RepositoryType>git</RepositoryType>
+        <PackageIcon>icon.png</PackageIcon>
+        <Copyright>Maydear Team (admin@maydear.com)</Copyright>
+        <Authors>Kelvin</Authors>
+        <Company></Company>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <Title>阿里云短信的基础设施 </Title>
+        <Description>阿里云短信的基础设施</Description>
+        <Version>3.1.203</Version>
+        <AssemblyName>Maydear.Infrastructure.AliYun.Sms</AssemblyName>
+        <NeutralLanguage>zh-CN</NeutralLanguage>
+        <Language>zh-CN</Language>
+        <PackageTags>Maydear.Infrastructure.AliYun.Sms Maydear.Infrastructure.AliYun Maydear.Infrastructure Maydear</PackageTags>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <DocumentationFile>bin\Release\Maydear.Infrastructure.AliYun.Sms.xml</DocumentationFile>
+        <OutputPath>..\..\publish\</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\..\LICENSE-2.0.txt" Pack="true" Visible="false" PackagePath="" />
+        <None Include="..\..\icon.png" Pack="true" Visible="false" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="aliyun-net-sdk-core" Version="1.5.6" />
+        <PackageReference Include="Maydear" Version="3.1.203" />
+        <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    </ItemGroup>
+    <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0'">
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.2.0" />
+    </ItemGroup>
+    <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.1'">
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.3" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.3" />
+        <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.3" />
+    </ItemGroup>
+</Project>
