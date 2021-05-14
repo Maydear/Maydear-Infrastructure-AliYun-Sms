@@ -15,7 +15,7 @@
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <Title>阿里云短信的基础设施 </Title>
         <Description>阿里云短信的基础设施</Description>
-        <Version>3.1.203</Version>
+        <Version>3.1.210</Version>
         <AssemblyName>Maydear.Infrastructure.AliYun.Sms</AssemblyName>
         <NeutralLanguage>zh-CN</NeutralLanguage>
         <Language>zh-CN</Language>
@@ -33,8 +33,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="aliyun-net-sdk-core" Version="1.5.6" />
-        <PackageReference Include="Maydear" Version="3.1.203" />
+        <PackageReference Include="aliyun-net-sdk-core" Version="1.5.10" />
+        <PackageReference Include="Maydear" Version="3.1.210" />
         <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     </ItemGroup>
     <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0'">
@@ -43,8 +43,8 @@
         <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.2.0" />
     </ItemGroup>
     <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.1'">
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.3" />
-        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.3" />
-        <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.3" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.15" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.15" />
+        <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.15" />
     </ItemGroup>
 </Project>
